@@ -18,7 +18,7 @@ Here is a list of files that are the foundation of the app:
 - `index.html` - page that hosts the app 
 - `ui.css` - CSS Style Override 
 - `app.js` - app entry point 
-- `all-views.js` - angular.js view routing and controller registrations
+- `all-views.js` - angular.min.js view routing and controller registrations
 - `idb.js` - wrapper of [db.js](http://aaronpowell.github.io/db.js/)
 - `bookmark-loader.js` - parse Chrome bookmarks and persist bookmarks and tagGroups
 - `chrome-bookmark-parser.js` - parse the Chrome bookmarks and return bookmarks and tagGroups

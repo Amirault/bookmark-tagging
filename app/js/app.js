@@ -11,7 +11,7 @@ require.config({
 require([
     'lib/lodash.underscore',
     'lib/jquery',
-    'lib/angular/angular',
+    'lib/angular/angular.min',
     'lib/angular/angular-route',
     'lib/bootstrap/bootstrap',
     'lib/bootstrap3-typeahead'
@@ -26,7 +26,6 @@ require([
         'extension/lodash.underscore'
     ], function() {
         require([
-
             'data/bookmark-loader',
             'view/all-views'
         ], function(loader, views) {
