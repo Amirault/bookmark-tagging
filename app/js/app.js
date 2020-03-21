@@ -12,7 +12,7 @@ require([
     'lib/lodash.underscore',
     'lib/jquery',
     'lib/angular/angular.min',
-    'lib/angular/angular-route',
+    'lib/angular/angular-route.min',
     'lib/bootstrap/bootstrap',
     'lib/bootstrap3-typeahead'
 ], function() {
