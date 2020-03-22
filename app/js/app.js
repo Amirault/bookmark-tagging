@@ -13,7 +13,7 @@ require([
     'lib/jquery.min',
     'lib/angular/angular.min',
     'lib/angular/angular-route.min',
-    'lib/bootstrap/bootstrap',
+    'lib/bootstrap/bootstrap.min',
     'lib/bootstrap3-typeahead'
 ], function() {
     require([
