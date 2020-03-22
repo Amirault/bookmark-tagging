@@ -9,7 +9,7 @@ require.config({
 });
 
 require([
-    'lib/lodash.underscore',
+    'lib/lodash.min',
     'lib/jquery.min',
     'lib/angular/angular.min',
     'lib/angular/angular-route.min',
