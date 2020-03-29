@@ -1,11 +1,10 @@
+import * as actions from './actions'
+import * as add from './add'
+import * as renameTag from './rename-tag'
+import * as showTags from './show-tags'
+import * as search from './search'
+
 define(function (require, exports, module) {
-
-    var actions = require('view/actions'),
-        add = require('view/add'),
-        renameTag = require('view/rename-tag'),
-        showTags = require('view/show-tags'),
-        search = require('view/search');
-
     function registerController(app, name, controller) {
         app.controller(name, ['$scope', '$location', controller]);
     }

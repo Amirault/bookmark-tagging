@@ -1,8 +1,9 @@
+import bookmarkRepo from "../data/bookmark-repository";
+import tagGroupRepo from "../data/tag-group-repository";
+
 define(function (require, exports, module) {
 
-    var bookmarkRepo = require('data/bookmark-repository'),
-        tagGroupRepo = require('data/tag-group-repository'),
-        getTitleTemplate = function () {
+    var getTitleTemplate = function () {
             var template = '<div class="ngCellText"><a href="{url}" title="{url}" target="_blank">{title}</a></div>';
             return template.replace(/{url}/g, '{{row.getProperty(\'url\')}}').replace('{title}', '{{row.getProperty(col.field)}}');
         },

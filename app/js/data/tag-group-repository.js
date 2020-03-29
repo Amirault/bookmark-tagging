@@ -1,7 +1,8 @@
+import * as idb from "./idb"
+
 define(function (require, exports, module) {
 
-    var idb = require('data/idb'),
-        dbKey = 'tagGroup';
+    var dbKey = 'tagGroup';
 
     module.exports = {
         create: function (tags, op) {

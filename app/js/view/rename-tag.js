@@ -1,8 +1,8 @@
+import tagGroupRepo from "../data/tag-group-repository";
+
+import alerts from "./alerts";
+
 define(function (require, exports, module) {
-
-    var tagGroupRepo = require('data/tag-group-repository'),
-        alerts = require('view/alerts');
-
     exports.name = 'RenameTagCtrl';
 
     exports.controller = function ($scope, $location) {

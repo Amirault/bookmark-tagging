@@ -1,10 +1,10 @@
-define(function (require, exports, module) {
+import * as bookmarkLoader from '../data/bookmark-loader'
+import * as idb from '../data/idb'
+import * as bookmarkRepo from '../data/bookmark-repository'
+import * as fileSaver from '../lib/FileSaver'
+import * as tab from './tab'
 
-    var bookmarkLoader = require('data/bookmark-loader'),
-        idb = require('data/idb'),
-        bookmarkRepo = require('data/bookmark-repository'),
-        fileSaver = require('lib/FileSaver'),
-        tab = require('view/tab');
+define(function (require, exports, module) {
 
     function hideMsgAfterward($scope) {
         setTimeout(function () {

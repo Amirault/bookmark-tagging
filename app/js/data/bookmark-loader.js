@@ -1,9 +1,9 @@
-define(function (require, exports, module) {
+import * as tagGroupRepo from './tag-group-repository'
+import * as bookmarkRepo from './bookmark-repository'
+import * as bookmarkParser from './chrome-bookmark-parser'
+import * as idb from './idb'
 
-    var idb = require('data/idb'),
-        tagGroupRepo = require('data/tag-group-repository'),
-        bookmarkRepo = require('data/bookmark-repository'),
-        bookmarkParser = require('data/chrome-bookmark-parser');
+define(function (require, exports, module) {
 
     function loadBookmarks(bookmarkTreeNodes, op) {
         var results = bookmarkParser.parseChromeBookmarks(bookmarkTreeNodes),

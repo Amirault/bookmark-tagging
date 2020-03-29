@@ -1,8 +1,9 @@
+import * as tagGroupRepo from './tag-group-repository'
+import * as idb from './idb'
+
 define(function (require, exports, module) {
 
-    var idb = require('data/idb'),
-        tagGroupRepo = require('data/tag-group-repository'),
-        dbKey = 'bookmark';
+    var dbKey = 'bookmark';
     module.exports = {
         create: function (bookmark, tags, op) {
             var me = this;

@@ -1,7 +1,8 @@
+import * as db from "../lib/db"
+
 define(function (require, exports, module) {
 
-    var db = require('lib/db'),
-        idb = {
+    var idb = {
             schema: {
                 bookmark: {
                     key: {

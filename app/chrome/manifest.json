@@ -1,14 +1,14 @@
 {
-    "name": "Bookmarks Tagging",
-    "version": "2.5.1",
-    "description": "Manage bookmarks with tags.",
+    "name": "Bookmarks Master",
+    "version": "0.0.1",
+    "description": "package.json",
     "permissions": [
         "bookmarks",
         "tabs"
     ],
     "browser_action": {
-        "default_title": "Bookmarks Tagging",
-        "default_icon": "icon.png",
+        "default_title": "Bookmarks Master",
+        "default_icon": "./icons/icon.png",
         "default_popup": "index.html"
     },
     "manifest_version": 2,

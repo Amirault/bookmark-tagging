@@ -1,9 +1,8 @@
-define(function (require, exports, module) {
+import bookmarkRepo from "../data/bookmark-repository";
+import tagGroupRepo from "../data/tag-group-repository";
 
-    var bookmarkRepo = require('data/bookmark-repository'),
-        tagGroupRepo = require('data/tag-group-repository'),
-        tab = require('view/tab'),
-        getTagsTemplate = function () {
+define(function (require, exports, module) {
+    var getTagsTemplate = function () {
             var template = '<div class="ngCellText"><a href ng-click="searchWithTags(row.getProperty(\'tagsStrWithoutSpace\'))">{{{tags}}}</a></div>';
             return template.replace(/{tags}/g, 'row.getProperty(col.field)');
         },

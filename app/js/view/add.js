@@ -1,8 +1,9 @@
-define(function (require, exports, module) {
+import * as bookmarkRepo from '../data/bookmark-repository'
+import * as tagGroupRepo from '../data/tag-group-repository'
+import * as tab from './tab'
 
-    var bookmarkRepo = require('data/bookmark-repository'),
-        tagGroupRepo = require('data/tag-group-repository'),
-        tab = require('view/tab');
+
+define(function (require, exports, module) {
 
     exports.name = 'AddCtrl';
 
