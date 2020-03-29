@@ -35,6 +35,10 @@ module.exports = {
       {
         from: "./app/chrome/icons",
         to: "icons"
+      },
+      {
+        from: "./app/static/css",
+        to: "css"
       }
     ]),
     new WebpackExtensionManifestPlugin({
